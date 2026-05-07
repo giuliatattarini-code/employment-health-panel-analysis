@@ -1,7 +1,6 @@
 # Employment Health Panel Analysis
 
-Can improving employment conditions improve workers’ health and well-being?  
-This repository presents a reproducible longitudinal panel-data workflow using SOEP data and fixed-effects models in STATA 19.
+Can improving employment conditions improve workers’ health and well-being? Are there gender differences? Reproducible SOEP panel-data workflow in STATA 19. The workflow shows how longitudinal survey files can be transformed into analytical samples, modelled with fixed-effects regressions, and exported into tables and figures.
 
 ## Overview
 
