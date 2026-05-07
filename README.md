@@ -42,7 +42,7 @@ Main analytical components include:
 ```text
 01_data_cleaning.do
 02_variable_construction.do
-03_sample_selection
+03_sample_selection.do
 04_panel_models.do
 ```
 ---
