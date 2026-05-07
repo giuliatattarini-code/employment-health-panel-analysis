@@ -1,20 +1,33 @@
-# Data files
-data/
+# Raw and processed data
+data/raw/
+data/processed/
 *.dta
-*.csv
-*.xlsx
 
-# Output files
-outputs/
-graphs/
-tables/
+# Output contents
+outputs/tables/*
+outputs/graphs/*
+logs/*
 
-# Logs
-*.log
+# Keep folder structure
+!outputs/tables/.gitkeep
+!outputs/graphs/.gitkeep
+!logs/.gitkeep
+
+# Exported files
+*.doc
+*.docx
+*.rtf
+*.png
+*.gph
+*.ster
 
 # Temporary files
 *.tmp
 *.bak
+
+# Stata logs
+*.log
+*.smcl
 
 # MacOS
 .DS_Store
