@@ -1,6 +1,7 @@
 # Employment Health Panel Analysis
 
-Illustrative reproducible workflow for longitudinal panel data analysis using SOEP data (STATA 19).
+Can improving employment conditions improve workers’ health and well-being?  
+This repository presents a reproducible longitudinal panel-data workflow using SOEP data and fixed-effects models in STATA 19.
 
 ## Overview
 
@@ -41,9 +42,9 @@ Main analytical components include:
 ```text
 01_data_cleaning.do
 02_variable_construction.do
-03_panel_models.do
+03_sample_selection
+04_panel_models.do
 ```
-
 ---
 
 ## Software
