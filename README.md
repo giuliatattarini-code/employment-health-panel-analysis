@@ -9,7 +9,7 @@ This repository contains a simplified analytical workflow for studying the relat
 
 The project showcases:
 - data cleaning and harmonisation
-- variable construction
+- variable construction & sample selection
 - panel data modelling and visualisation
 - reproducible analytical workflows
 
@@ -33,7 +33,7 @@ Main analytical components include:
 - longitudinal data processing
 - construction of employment-related indicators
 - fixed-effects panel regression models
-- robustness and validation checks
+- visualisation
 
 ---
 
