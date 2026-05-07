@@ -1,0 +1,23 @@
+# Data files
+data/
+*.dta
+*.csv
+*.xlsx
+
+# Output files
+outputs/
+graphs/
+tables/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
