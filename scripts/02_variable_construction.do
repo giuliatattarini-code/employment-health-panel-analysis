@@ -225,30 +225,6 @@ label variable median_wage "Median hourly wage by year and federal state"
 generate low_wage_threshold = (2/3) * median_wage
 label variable low_wage_threshold "Low-wage threshold: two thirds of median wage"
 
-* Binary low-wage indicator
-
-generate low_wage = .
-replace low_wage = 1 if hourly_wage < low_wage_threshold & hourly_wage < .
-replace low_wage = 0 if hourly_wage >= low_wage_threshold & hourly_wage < .
-
-label define low_wage 0 "No low-wage work" 1 "Low-wage work"
-label values low_wage low_wage
-label variable low_wage "Low-wage work"
-
-* Low-wage indicator including non-employment
-
-generate low_wage_with_unemp = .
-replace low_wage_with_unemp = 0 if employment_status == 4
-replace low_wage_with_unemp = 1 if low_wage == 1
-replace low_wage_with_unemp = 2 if low_wage == 0
-
-label define low_wage_with_unemp ///
-    0 "Not employed" ///
-    1 "Low-wage work" ///
-    2 "No low-wage work"
-label values low_wage_with_unemp low_wage_with_unemp
-label variable low_wage_with_unemp "Low-wage work, including non-employment"
-
 * Relative wage: gross hourly wage divided by year-state median wage
 
 generate relative_wage = hourly_wage / median_wage
